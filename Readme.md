@@ -30,3 +30,49 @@ npx playwright show-report
 
 <hr>
 Curso disponível em https://qaxperience.com
+
+## 🤖 Como executar o docker
+
+1. Executar o Docker desktop e dar play no container zombieplus
+```
+- Sobe um novo ambiente (Banco de dados)
+docker-compose up -d
+
+- Deleta o ambiente criado (Banco de dados)
+docker-compose down
+```
+
+2. Via gitbash, executar os comandos para subir o servidor API
+```
+cd /c/QAx/apps/zombieplus/api
+./db.sh
+npm run dev
+```
+
+3. Via gitbash, executar os comandos para subir o servidor WEB
+```
+cd /c/QAx/apps/zombieplus/web/
+npm run dev 
+```
+
+Obs. Dados para registro do banco
+```
+Registro do ambiente:
+Genenral: pgdb
+Connection:
+pgdb
+5432
+postgres
+postgres
+pwd123
+
+Create-Database
+zombieplus
+
+Ao finalizar, basta ir na interface do docker > Containers > Clicar em stop/play para para ou ligar o banco, assim não zera!
+
+http://localhost:3000/
+http://localhost:16543/browser/
+```
+
+<hr>
