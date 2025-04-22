@@ -74,5 +74,3 @@ Ao finalizar, basta ir na interface do docker > Containers > Clicar em stop/play
 http://localhost:3000/
 http://localhost:16543/browser/
 ```
-
-<hr>
